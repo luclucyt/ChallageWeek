@@ -211,6 +211,43 @@ body {
     cursor: pointer;
   }
   
+  .vakken-lijst {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .vak {
+    margin-bottom: 20px;
+  }
+  
+  .vak h2 {
+    margin-bottom: 5px;
+  }
+  
+  .stemknop {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .voorstel-knop {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto;
+    font-size: 16px;
+    cursor: pointer;
+  }
   
   
   footer {
