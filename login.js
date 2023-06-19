@@ -46,12 +46,17 @@ document.addEventListener('mousemove', function(event) {
     event.preventDefault();
     if (isDown) {
         mousePosition = {
-    
-            x : event.clientX,
-            y : event.clientY
-    
+            x: event.clientX,
+            y: event.clientY
         };
-        div.style.left = (mousePosition.x + offset[0]) + 'px';
-        div.style.top  = (mousePosition.y + offset[1]) + 'px';
+        
+        var newX = mousePosition.x + offset[0];
+        var newY = mousePosition.y + offset[1];
+        
+        newX = Math.max(0, Math.min(newX, window.innerWidth - div.offsetWidth));
+        newY = Math.max(0, Math.min(newY, window.innerHeight - div.offsetHeight));
+        
+        div.style.left = newX + 'px';
+        div.style.top = newY + 'px';
     }
 }, true);
