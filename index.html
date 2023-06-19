@@ -4,6 +4,9 @@
   <title>Vote for Fan Favorite</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="navbar.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
+  <script src="login.js" defer></script>
 </head>
 <body>
   <header>
@@ -16,6 +19,69 @@
         <button class="btnLogin-popup">login</button>
     </nav>
   </header>
+  <div class="form-wrapper">
+    <span class="icon-close">
+      <ion-icon name="close"></ion-icon>
+    </span>
+
+    <!-- LOGIN -->
+    <div class="form-box login">
+      <h2>Login</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+          <input type="password" required>
+          <label>Wachtwoord</label>
+        </div>
+        <div class="remeber-forgor">
+          <label><input type="checkbox">onthoud</label>
+          <a href="#">Forgor Wachtwoord</a>
+        </div>
+        <button type="submit" class="btnLogin">Login</button>
+        <div class="login-register">
+          <p>
+            geen account? <a href="#" class="register-link">registreer</a>
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <!-- REGISTREER -->
+    <div class="form-box register">
+      <h2>register</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="person"></ion-icon></span>
+          <input type="text" required>
+          <label>Student Nummer</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+          <input type="password" required>
+          <label>Wachtwoord</label>
+        </div>
+        <div class="remeber-forgor">
+          <label><input type="checkbox">ik ga akkord met Terms of service</label>
+        </div>
+        <button type="submit" class="btnLogin">Registreer</button>
+        <div class="login-register">
+          <p>
+            Al een account? <a href="#" class="login-link">Login</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
   <!-- <header>
     <div class="logo">GLR</div>
     <nav>
