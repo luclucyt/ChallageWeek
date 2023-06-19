@@ -1,0 +1,18 @@
+.slider {
+    margin: 0;
+    z-index: -1;
+    background-color: beige;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 3px 10px 15px 0px rgba(0,0,0,0.4);
+    border-bottom: 2px solid var(--main-color);
+  }
+  
+  .slider img {
+    width: 99.1vw;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    border-radius: 3px;
+  }
