@@ -1,18 +1,114 @@
-.slider {
+body {
     margin: 0;
-    z-index: -1;
-    background-color: beige;
-    height: 500px;
-    overflow: hidden;
-    border-radius: 3px;
-    box-shadow: 3px 10px 15px 0px rgba(0,0,0,0.4);
-    border-bottom: 2px solid var(--main-color);
+    padding: 0;
+    font-family: Arial, sans-serif;
   }
   
-  .slider img {
-    width: 99.1vw;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    height: 500px;
-    border-radius: 3px;
+  header {
+    background: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
   }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  section.welcome-section {
+    text-align: center;
+    padding: 80px 0;
+  }
+  
+  section.welcome-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  section.welcome-section p {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .btn-login {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .category-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+  }
+  
+  .category {
+    text-align: center;
+    margin-right: 40px;
+  }
+  
+  .category h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .category p {
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .btn-category {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  footer {
+    background: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  footer ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
