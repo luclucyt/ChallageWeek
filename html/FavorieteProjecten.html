@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html>
 <head>
   <title>Vote for Fan Favorite</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
   <header>
@@ -20,25 +21,28 @@
     </nav>
   </header>
   
-  <section class="welcome-section">
-    <h1>Vote for Fan Favorite</h1>
-    <p>Welkom op de website waar gebruikers hun stem kunnen uitbrengen op favoriete projecten, docenten, vakken en meer!</p>
-    <p>Log in of registreer om deel te nemen aan de stemmingen.</p>
-    <a href="#" class="btn-login">Inloggen</a>
-  </section>
-  
   <section class="category-section">
-    <div class="category">
-      <h2>Favoriete projecten</h2>
-      <p>Stem op verschillende projecten die studenten hebben voltooid.</p>
-      <a href="#" class="btn-category">Bekijk projecten</a>
-    </div>
-    
-    <div class="category">
-      <h2>Favoriete docenten</h2>
-      <p>Stem op je favoriete docenten op basis van verschillende criteria.</p>
-      <a href="#" class="btn-category">Bekijk docenten</a>
-    </div>
+    <div class="project-list">
+        <div class="project">
+          <h2>Projectnaam</h2>
+          <p>Korte projectbeschrijving</p>
+          <img src="project-image.jpg" alt="Projectafbeelding">
+          <div class="voting">
+            <button class="vote-btn">Stem</button>
+          </div>
+          <div class="comments">
+            <h3>Opmerkingen</h3>
+            <ul>
+              <li>Opmerking 1</li>
+              <li>Opmerking 2</li>
+              <li>Opmerking 3</li>
+            </ul>
+            <form>
+              <input type="text" placeholder="Voeg een opmerking toe">
+              <button type="submit">Plaats opmerking</button>
+            </form>
+          </div>
+        </div>
     
     <!-- Andere categorieën hier toevoegen -->
   </section>

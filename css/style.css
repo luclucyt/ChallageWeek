@@ -89,6 +89,77 @@ body {
     font-weight: bold;
   }
   
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  
+  .project {
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  .project h2 {
+    margin: 0;
+  }
+  
+  .project p {
+    margin-top: 10px;
+  }
+  
+  .project img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  .voting {
+    margin-top: 20px;
+  }
+  
+  .vote-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .comments {
+    margin-top: 20px;
+  }
+  
+  .comments h3 {
+    margin: 0;
+  }
+  
+  .comments ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .comments ul li {
+    margin-bottom: 10px;
+  }
+  
+  form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  form button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  
   footer {
     background: #333;
     padding: 20px;
