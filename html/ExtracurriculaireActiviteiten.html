@@ -15,7 +15,7 @@
             <li><a href="../html/FavorieteProjecten.html">Favoriete projecten</a></li>
             <li><a href="../html/FavorieteDocenten.html">Favoriete docenten</a></li>
             <li><a href="../html/FavorieteVakken.html">Favoriete vakken</a></li>
-            <li><a href="../html/ExtracurriculaireActiviteiten.html">Extracurriculaire activiteiten</a></li>
+            <li><a href="#">Extracurriculaire activiteiten</a></li>
             <li><a href="#">Evenementen</a></li>
             <li><a href="#">Innovatieve ideeën</a></li>
             <li><a href="#">Inloggen</a></li>
@@ -23,31 +23,30 @@
     </nav>
   </header>
   
-  <section class="category-section">
-    <div class="project-list">
-        <div class="project">
-          <h2>Projectnaam</h2>
-          <p>Korte projectbeschrijving</p>
-          <img src="project-image.jpg" alt="Projectafbeelding">
-          <div class="voting">
-            <button class="vote-btn">Stem</button>
-          </div>
-          <div class="comments">
-            <h3>Opmerkingen</h3>
-            <ul>
-              <li>Opmerking 1</li>
-              <li>Opmerking 2</li>
-              <li>Opmerking 3</li>
-            </ul>
-            <form>
-              <input type="text" placeholder="Voeg een opmerking toe">
-              <button type="submit">Plaats opmerking</button>
-            </form>
-          </div>
-        </div>
-    
-    <!-- Andere categorieën hier toevoegen -->
-  </section>
+
+  <div class="activity-list">
+    <div class="activity">
+      <h2>Club A</h2>
+      <p>Een club voor interessante activiteiten.</p>
+      <button class="vote-button">Stem</button>
+      <textarea class="comment-input" placeholder="Voeg een opmerking toe..."></textarea>
+    </div>
+
+    <div class="activity">
+      <h2>Sportteam B</h2>
+      <p>Een team voor sportliefhebbers.</p>
+      <button class="vote-button">Stem</button>
+      <textarea class="comment-input" placeholder="Voeg een opmerking toe..."></textarea>
+    </div>
+
+    <!-- Voeg hier andere activiteiten toe -->
+  </div>
+
+  <div class="new-activity-suggestions">
+    <h2>Suggesties voor nieuwe activiteiten</h2>
+    <input type="text" class="new-activity-input" placeholder="Voer een suggestie in">
+    <button class="new-activity-button">Indienen</button>
+  </div>
   
   <footer>
     <ul>
