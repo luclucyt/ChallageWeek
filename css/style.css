@@ -158,6 +158,59 @@ body {
     cursor: pointer;
     margin-top: 10px;
   }
+
+  /* Voorbeeld CSS-styling voor Favoriete docenten pagina */
+.docenten-lijst {
+    margin-bottom: 20px;
+  }
+  
+  .docenten-lijst ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .docenten-lijst li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .docent-naam {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .stem-knop {
+    background-color: #428bca;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .aantal-stemmen {
+    margin-left: 10px;
+    font-style: italic;
+  }
+  
+  .opmerkingen {
+    margin-bottom: 20px;
+  }
+  
+  .opmerking-toevoegen input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .opmerking-toevoegen button[type="submit"] {
+    background-color: #428bca;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
   
   
   footer {
