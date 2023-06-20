@@ -74,6 +74,7 @@ header {
 /* LOGIN */
 
 .form-wrapper {
+    user-select: none;
     position: absolute;
     width: 400px;
     height: 440px;
@@ -246,3 +247,8 @@ header {
     text-decoration: underline ;
 }
 
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
