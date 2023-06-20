@@ -17,6 +17,10 @@ header {
     z-index: 99;
 }
 
+header a img {
+    height: 10vh;
+}
+
 .navbar a {
     position: relative;
     font-size: 1.1em;
