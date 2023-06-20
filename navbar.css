@@ -10,7 +10,7 @@ header {
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background-color: red; /* ALS EEN ACHTERGROND DAN VERWIJDER DEZE */
+    /* background-color: red; ALS EEN ACHTERGROND DAN VERWIJDER DEZE */
     display: flex;
     justify-content: space-between;
     align-items: center;
