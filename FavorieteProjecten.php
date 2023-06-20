@@ -3,30 +3,15 @@
 
 <head>
 	<title>Vote for Fan Favorite</title>
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<script src="../js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<script src="js/script.js"></script>
 </head>
 
 <header>
-	<?php include 'navbar.html'; ?>
+	<?php include 'include/navbar.html'; ?>
 </header>
 
 <body>
-	<header>
-		<div class="logo">GLR</div>
-		<nav>
-			<ul>
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="../html/FavorieteProjecten.html">Favoriete projecten</a></li>
-				<li><a href="../html/FavorieteDocenten.html">Favoriete docenten</a></li>
-				<li><a href="../html/FavorieteVakken.html">Favoriete vakken</a></li>
-				<li><a href="../html/ExtracurriculaireActiviteiten.html">Extracurriculaire activiteiten</a></li>
-				<li><a href="#">Evenementen</a></li>
-				<li><a href="#">Innovatieve ideeën</a></li>
-				<li><a href="#">Inloggen</a></li>
-			</ul>
-		</nav>
-	</header>
 
 	<section class="category-section">
 		<div class="project-list">
