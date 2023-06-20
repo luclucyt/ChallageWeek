@@ -89,6 +89,9 @@ header {
     overflow: hidden;
     transform: scale(0);
     transition: transform .5s ease ,height .2s ease;
+    position: absolute;
+    top: 10vh;
+    right: 0;
 }
 
 .form-wrapper.active-popup {
