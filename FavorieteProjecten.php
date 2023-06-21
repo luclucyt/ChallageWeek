@@ -4,6 +4,7 @@
 <head>
 	<title>Vote for Fan Favorite</title>
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="navbar.css">
 	<script src="js/script.js"></script>
 </head>
 
