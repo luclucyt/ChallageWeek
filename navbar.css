@@ -151,7 +151,7 @@ header a img {
 
 .form-box h2 {
     font-size: 2em;
-    color: black;
+    color: white;
     text-align: center;
 }
 
@@ -169,7 +169,7 @@ header a img {
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: black;
+    color: white;
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
@@ -187,52 +187,30 @@ header a img {
     border: none;
     outline: none;
     font-size: 1em;
-    color: black;
+    color: white;
     font-weight: 600;
     padding: 0 35px 0 5px;
+    text-decoration-color: white;
 }
 
 .input-box .icon {
     position: absolute;
     right: 8px;
     font-size: 1.2rem;
-    color: black;
+    color: white;
     line-height: 57px;
-}
-
-.remeber-forgor {
-    font-size: .9em;
-    color: black;
-    font-weight: 500;
-    margin: -15px 0 15px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.remeber-forgor label input {
-    accent-color: black;
-    margin-right: 3px;
-}
-
-.remeber-forgor a {
-    color: black;
-    text-decoration: none;
-}
-
-.remeber-forgor a:hover {
-    text-decoration: underline;
 }
 
 .btnLogin {
     width: 100%;
     height: 45px;
-    background-color: black;
+    background-color: whitek;
     border: none;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 1em;
-    color: white;
+    color: black;
     font-weight: 500;
 }
 
