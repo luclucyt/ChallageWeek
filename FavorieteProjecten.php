@@ -1,3 +1,8 @@
+<script>
+    if(window.history.replaceState) {
+        window.history.replaceState(null, null, window.location.href);
+    }
+</script>
 <?php include 'include\db.php'; ?>
 <!DOCTYPE html>
 <html>
