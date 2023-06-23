@@ -28,24 +28,18 @@
 
     <div class="project-list">
         <?php
-        $sql = "SELECT * FROM albertheijn";
+        $sql = "SELECT * FROM albertheijn ORDER BY ruttes DESC";
         $result = mysqli_query($conn, $sql);
 
         while ($row = mysqli_fetch_assoc($result)) {?>
             <div class="project">
             <h2><?= $row['kaas'] ?></h2>
-<<<<<<< Updated upstream
             <img src="img/image.png" alt="<?= $row['kogel']?>">
-            <div class="voting">
-                <button class="vote-btn">Vote</button>
-            </div>
-=======
-            <img src="project1.jpg" alt="<?= $row['kogel']?>">
-            <form class="voting">
+            <form class="voting" method="post" action="">
                 <input type="hidden" name="id" value="<?= $row['postID']?>">
                 <button type="submit" name="vote" class="vote-btn">Vote</button>
+                <p><?= $row['ruttes'] ?></p>
             </form>
->>>>>>> Stashed changes
         </div>
         <?php } ?>
     </div>
@@ -65,6 +59,8 @@ if (isset($_POST['addProject'])) {
 if(isset($_POST['vote'])) {
     $id = $_POST['id'];
     $sql = "UPDATE albertheijn SET ruttes = ruttes + 1 WHERE postID = $id";
-    mysqli_query($conn, $sql);
+    if(mysqli_query($conn, $sql)){
+        header("Refresh:0");
+    }
 }
 ?>
