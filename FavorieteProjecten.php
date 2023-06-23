@@ -11,6 +11,7 @@
     <title>Vote for Fan Favorite</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
     <script src="login.js" defer></script>
@@ -22,46 +23,42 @@
 
 <body>
     <?php include 'include/login.html'; ?>
+    <section class="text">
+        <div class="text-wrapper container">
+            <div class="text-text">
+                <form method="POST" action="">
+                    <label>Project</label>
+                    <input type="text" name="kaas" placeholder="Project naam" required>
 
-    <form method="POST" action="">
-        <label>Project</label>
-        <input type="text" name="kaas" placeholder="Project naam" required>
+                    <label>Email</label>
+                    <input type="email" name="frikandelbroodje" placeholder="01234@glr.nl" required>
 
-        <label>Email</label>
-        <input type="email" name="frikandelbroodje" placeholder="01234@glr.nl" required>
+                    <label>Link</label>
+                    <input type="text" name="kogel" placeholder="https://01234.stu.sd-lab.nl" required>
 
-        <label>Link</label>
-        <input type="text" name="kogel" placeholder="https://01234.stu.sd-lab.nl" required>
- 
-        <label>Inhoud bericht</label>
-        <textarea name="onderwerp" placeholder="Type hier iets" style="height: 100px;" required></textarea>
-        <button type="submit" name="addProject">Submit</button>
-    </form>
-    <!-- <form method="POST" action="">
-        <input type="text" placeholder="Project naam" name="kaas"><br>
-        <input type="email" placeholder="Email" name="frikandelbroodje"><br>
-        <input type="text" placeholder="Link" name="kogel"><br>
-
-        <button type="submit" name="addProject">Submit</button>
-    </form> -->
-
-    <div class="project-list">
-        <?php
-        $sql = "SELECT * FROM albertheijn ORDER BY ruttes DESC";
-        $result = mysqli_query($conn, $sql);
-
-        while ($row = mysqli_fetch_assoc($result)) {?>
-            <div class="project">
-            <h2><?= $row['kaas'] ?></h2>
-            <img src="img/image.png" alt="<?= $row['kogel']?>">
-            <form class="voting" method="post" action="">
-                <input type="hidden" name="id" value="<?= $row['postID']?>">
-                <button type="submit" name="vote" class="vote-btn">Vote</button>
-                <p><?= $row['ruttes'] ?></p>
-            </form>
+                    <label>Inhoud bericht</label>
+                    <textarea name="onderwerp" placeholder="Type hier iets" style="height: 100px;" required></textarea>
+                    <button type="submit" name="addProject">Submit</button>
+                </form>
+            </div>
         </div>
-        <?php } ?>
-    </div>
+            <div class="project-list">
+                <?php
+                $sql = "SELECT * FROM albertheijn ORDER BY ruttes DESC";
+                $result = mysqli_query($conn, $sql);
+        
+                while ($row = mysqli_fetch_assoc($result)) {?>
+                    <div class="project">
+                    <h2><?= $row['kaas'] ?></h2>
+                    <img src="img/image.png" alt="<?= $row['kogel']?>">
+                    <form class="voting" method="post" action="">
+                        <input type="hidden" name="id" value="<?= $row['postID']?>">
+                        <button type="submit" name="vote" class="vote-btn">Vote</button>
+                        <p>Hoeveel votes: <?= $row['ruttes'] ?></p>
+                    </form>
+                </div>
+                <?php } ?>
+    </section>
 </html>
 
 <?php
