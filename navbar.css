@@ -83,7 +83,7 @@ header a img {
     width: 400px;
     height: 440px;
     background: transparent;
-    border: 2px solid grey;
+    border: 2px solid rgba(128, 128, 128, 0.185);
     border-radius: 20px;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);

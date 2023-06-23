@@ -73,7 +73,7 @@ body {
   
   .project-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     padding: 20px;
   }
@@ -83,7 +83,7 @@ body {
     color: white;
     padding: 20px;
     background: transparent;
-    border: 2px solid grey;
+    border: 2px solid rgba(128, 128, 128, 0.185);
     border-radius: 20px;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
@@ -295,7 +295,7 @@ body {
 
   .project-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     padding: 20px;
   }

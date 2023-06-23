@@ -42,6 +42,7 @@
                 </form>
             </div>
         </div>
+        <div class="text-wrapper container">
             <div class="project-list">
                 <?php
                 $sql = "SELECT * FROM albertheijn ORDER BY ruttes DESC";
@@ -58,8 +59,10 @@
                         <button type="submit" name="vote" class="vote-btn">Vote</button>
                         <p>Hoeveel votes: <?= $row['ruttes'] ?></p>
                     </form>
-                </div>
+                    </div>
                 <?php } ?>
+            </div>
+        </div>
     </section>
 </html>
 
