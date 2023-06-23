@@ -1,3 +1,4 @@
+<?php include 'include\db.php';?>
 <!DOCTYPE html>
 <html>
 
@@ -46,6 +47,38 @@
 
 <body>
 	<?php include 'include/login.html'; ?>
+
+    <form method="POST" action="">
+        <input type="text" placeholder="Project naam" name="kaas"><br>
+        <input type="email" placeholder="Email" name="frikandelbroodje"><br>
+        <input type="text" placeholder="Link" name="kogel"><br> 
+
+        <button type="submit" name="addProject">Submit</button>
+    </form>
+
+    <div>
+        <?php
+            $sql = "SELECT * FROM albertheijn";
+            $result = mysqli_query($conn, $sql);
+
+            while ($row = mysqli_fetch_assoc($result)) {
+                echo $row['kaas'] . "<br>";
+                echo $row['frikandelbroodje'] . "<br>";
+                echo $row['kogel'] . "<br><br>";
+            }
+        ?>
+    </div>
 	
 </body>
 </html>
+
+<?php
+if (isset($_POST['addProject'])) {
+    $projectNaam = $_POST['kaas'];
+    $email = $_POST['frikandelbroodje'];
+    $link = $_POST['kogel'];
+
+    $sql = "INSERT INTO albertheijn (kaas, frikandelbroodje, kogel) VALUES ('$projectNaam', '$email', '$link')";
+    mysqli_query($conn, $sql);
+}
+?>
