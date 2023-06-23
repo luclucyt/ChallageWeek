@@ -14,7 +14,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 99;
+    z-index: 4;
 }
 
 header a img {
@@ -96,6 +96,7 @@ header a img {
     position: absolute;
     top: 125px;
     right: 5vw;
+    z-index: 98;
 }
 
 .form-wrapper.active-popup {
