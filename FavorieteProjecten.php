@@ -34,7 +34,7 @@
         while ($row = mysqli_fetch_assoc($result)) {?>
             <div class="project">
             <h2><?= $row['kaas'] ?></h2>
-            <img src="project1.jpg" alt="<?= $row['kogel']?>">
+            <img src="img/image.png" alt="<?= $row['kogel']?>">
             <div class="voting">
                 <button class="vote-btn">Vote</button>
             </div>
