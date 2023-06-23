@@ -285,3 +285,38 @@ body {
     text-decoration: none;
   }
   
+
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  
+  .project {
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  .project h2 {
+    margin: 0;
+  }
+  
+  .project img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  .voting {
+    margin-top: 20px;
+  }
+  
+  .vote-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
