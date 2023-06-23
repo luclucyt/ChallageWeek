@@ -1,3 +1,4 @@
+<?php include 'include/db.php' ?>
 <!DOCTYPE html>
 <html>
 
@@ -30,7 +31,27 @@
             <div class="text-text">
                 <h2>Zie hier de votings van de projecten</h2>
                 <ul class="chart">
-                  <li>
+                    <?php
+                        $sql = "SELECT * FROM albertheijn";
+                        $result = mysqli_query($conn, $sql);
+                        $totalVotes = 0;
+
+                        while($row = mysqli_fetch_assoc($result)){
+                            $totalVotes += $row['ruttes'];
+                        }
+                     ?>
+                     <?php
+                        $sql = "SELECT * FROM albertheijn";
+                        $result = mysqli_query($conn, $sql);
+
+                        while($row = mysqli_fetch_assoc($result)){ 
+                            $procentage = round(($row['ruttes'] / $totalVotes) * 100);
+                            ?>
+                            <li>
+                                <span style="height:<?= $procentage ?>%" title="<?= $row['kaas'] ?>"></span>
+                            </li>
+                       <?php }    ?>
+                  <!-- <li>
                     <span style="height:5%" title="project 1"></span>
                   </li>
                   <li>
@@ -41,7 +62,7 @@
                   </li>
                   <li>
                     <span style="height:15%" title="project 4"></span>
-                  </li>
+                  </li> -->
                 </ul>    
             </div>
         </div>
