@@ -138,9 +138,9 @@ header a img {
     right: 0;
     width: 45px;
     height: 45px;
-    background: black;
+    background: white;
     font-size: 2em;
-    color: white;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
