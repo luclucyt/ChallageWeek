@@ -34,10 +34,18 @@
         while ($row = mysqli_fetch_assoc($result)) {?>
             <div class="project">
             <h2><?= $row['kaas'] ?></h2>
+<<<<<<< Updated upstream
             <img src="img/image.png" alt="<?= $row['kogel']?>">
             <div class="voting">
                 <button class="vote-btn">Vote</button>
             </div>
+=======
+            <img src="project1.jpg" alt="<?= $row['kogel']?>">
+            <form class="voting">
+                <input type="hidden" name="id" value="<?= $row['postID']?>">
+                <button type="submit" name="vote" class="vote-btn">Vote</button>
+            </form>
+>>>>>>> Stashed changes
         </div>
         <?php } ?>
     </div>
@@ -49,7 +57,14 @@ if (isset($_POST['addProject'])) {
     $email = $_POST['frikandelbroodje'];
     $link = $_POST['kogel'];
 
-    $sql = "INSERT INTO albertheijn (kaas, frikandelbroodje, kogel) VALUES ('$projectNaam', '$email', '$link')";
+    $sql = "INSERT INTO albertheijn (kaas, frikandelbroodje, kogel, ruttes) VALUES ('$projectNaam', '$email', '$link', 0)";
+    mysqli_query($conn, $sql);
+}
+
+
+if(isset($_POST['vote'])) {
+    $id = $_POST['id'];
+    $sql = "UPDATE albertheijn SET ruttes = ruttes + 1 WHERE postID = $id";
     mysqli_query($conn, $sql);
 }
 ?>
