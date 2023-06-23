@@ -19,9 +19,7 @@
         
     <section class="welcome-section">
         <h1>Vote for Fan Favorite</h1>
-        <p>Welkom op de website waar gebruikers hun stem kunnen uitbrengen op favoriete projecten, docenten, vakken en
-            meer!
-        </p>
+        <p>Welkom op de website waar gebruikers hun stem kunnen uitbrengen op favoriete projecten, docenten, vakken en meer!</p>
         <p>Log in of registreer om deel te nemen aan de stemmingen.</p>
         <a href="#" class="btn-login">Inloggen</a>
     </section>
@@ -32,21 +30,6 @@
             <p>Stem op verschillende projecten die studenten hebben voltooid.</p>
             <a href="#" class="btn-category">Bekijk projecten</a>
         </div>
-
-        <div class="category">
-            <h2>Favoriete docenten</h2>
-            <p>Stem op je favoriete docenten op basis van verschillende criteria.</p>
-            <a href="#" class="btn-category">Bekijk docenten</a>
-        </div>
-
-        <!-- Andere categorieën hier toevoegen -->
-    </section>
-
-    
+    </section>    
 </body>
-
-<footer>
-    <?php include 'include/footer.html';?>
-</footer>
-
 </html>
