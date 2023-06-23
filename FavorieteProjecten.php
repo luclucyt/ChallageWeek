@@ -28,16 +28,18 @@
 
     <div class="project-list">
         <?php
-        $sql = "SELECT * FROM albertheijn";
+        $sql = "SELECT * FROM albertheijn ORDER BY ruttes DESC";
         $result = mysqli_query($conn, $sql);
 
         while ($row = mysqli_fetch_assoc($result)) {?>
             <div class="project">
             <h2><?= $row['kaas'] ?></h2>
-            <img src="project1.jpg" alt="<?= $row['kogel']?>">
-            <div class="voting">
-                <button class="vote-btn">Vote</button>
-            </div>
+            <img src="img/image.png" alt="<?= $row['kogel']?>">
+            <form class="voting" method="post" action="">
+                <input type="hidden" name="id" value="<?= $row['postID']?>">
+                <button type="submit" name="vote" class="vote-btn">Vote</button>
+                <p><?= $row['ruttes'] ?></p>
+            </form>
         </div>
         <?php } ?>
     </div>
@@ -49,7 +51,16 @@ if (isset($_POST['addProject'])) {
     $email = $_POST['frikandelbroodje'];
     $link = $_POST['kogel'];
 
-    $sql = "INSERT INTO albertheijn (kaas, frikandelbroodje, kogel) VALUES ('$projectNaam', '$email', '$link')";
+    $sql = "INSERT INTO albertheijn (kaas, frikandelbroodje, kogel, ruttes) VALUES ('$projectNaam', '$email', '$link', 0)";
     mysqli_query($conn, $sql);
+}
+
+
+if(isset($_POST['vote'])) {
+    $id = $_POST['id'];
+    $sql = "UPDATE albertheijn SET ruttes = ruttes + 1 WHERE postID = $id";
+    if(mysqli_query($conn, $sql)){
+        header("Refresh:0");
+    }
 }
 ?>
