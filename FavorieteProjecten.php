@@ -19,12 +19,26 @@
     <?php include 'include/login.html'; ?>
 
     <form method="POST" action="">
+        <label>Project</label>
+        <input type="text" name="kaas" placeholder="Project naam" required>
+
+        <label>Email</label>
+        <input type="email" name="frikandelbroodje" placeholder="01234@glr.nl" required>
+
+        <label>Link</label>
+        <input type="text" name="kogel" placeholder="https://01234.stu.sd-lab.nl" required>
+ 
+        <label>Inhoud bericht</label>
+        <textarea name="onderwerp" placeholder="Type hier iets" style="height: 100px;" required></textarea>
+        <button type="submit" name="addProject">Submit</button>
+    </form>
+    <!-- <form method="POST" action="">
         <input type="text" placeholder="Project naam" name="kaas"><br>
         <input type="email" placeholder="Email" name="frikandelbroodje"><br>
         <input type="text" placeholder="Link" name="kogel"><br>
 
         <button type="submit" name="addProject">Submit</button>
-    </form>
+    </form> -->
 
     <div class="project-list">
         <?php
