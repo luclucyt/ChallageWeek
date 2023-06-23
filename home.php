@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
     <link rel="stylesheet" type="text/css" href="navbar.css">
     
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
@@ -23,15 +24,27 @@
         <h1>Vote for Fan Favorite</h1>
         <p>Welkom op de website waar gebruikers hun stem kunnen uitbrengen op favoriete projecten, docenten, vakken en meer!</p>
         <p>Log in of registreer om deel te nemen aan de stemmingen.</p>
-        <a href="#" class="btn-login">Inloggen</a>
     </section>
-
-    <section class="category-section">
-        <div class="category">
-            <h2>Favoriete projecten</h2>
-            <p>Stem op verschillende projecten die studenten hebben voltooid.</p>
-            <a href="#" class="btn-category">Bekijk projecten</a>
+    <section class="text">
+        <div class="text-wrapper container">
+            <div class="text-text">
+                <h2>Zie hier de votings van de projecten</h2>
+                <ul class="chart">
+                  <li>
+                    <span style="height:5%" title="project 1"></span>
+                  </li>
+                  <li>
+                    <span style="height:70%" title="project 2"></span>
+                  </li>
+                  <li>
+                    <span style="height:50%" title="project 3"></span>
+                  </li>
+                  <li>
+                    <span style="height:15%" title="project 4"></span>
+                  </li>
+                </ul>    
+            </div>
         </div>
-    </section>    
+    </section> 
 </body>
 </html>

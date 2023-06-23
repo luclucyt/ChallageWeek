@@ -1,0 +1,73 @@
+
+.chart {
+	display: table;
+	table-layout: fixed;
+	width: 60%;
+	max-width: 700px;
+	height: 200px;
+	margin: 0 auto;
+	background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.1) 2%, transparent 2%);
+	background-size: 100% 50px;
+	background-position: left top;
+  }
+  
+  .chart li {
+	position: relative;
+	display: table-cell;
+	vertical-align: bottom;
+	height: 200px;
+  }
+  
+  .chart span {
+	color: white;
+	margin: 0 1em;
+	display: block;
+	background: rgba(82, 166, 207, 0.75);
+	animation: draw 1s ease-in-out;
+  }
+  
+  .chart span:before {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 100%;
+	padding: 5px 1em 0;
+	display: block;
+	text-align: center;
+	content: attr(title);
+	word-wrap: break-word;
+  }
+  
+  @keyframes draw {
+	0% {
+	  height: 0;
+	}
+  }
+
+.text {
+    padding: 50px 0;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.text-text {
+	text-align: center;
+	color: white;
+    flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+	background: transparent;
+    border: 2px solid grey;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
