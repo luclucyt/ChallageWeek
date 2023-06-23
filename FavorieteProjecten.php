@@ -51,7 +51,9 @@
                 while ($row = mysqli_fetch_assoc($result)) {?>
                     <div class="project">
                     <h2><?= $row['kaas'] ?></h2>
-                    <img src="img/image.png" alt="<?= $row['kogel']?>">
+                    <a href="<?= $row['kogel'] ?>" target="_blank">
+                        <img src="img/image.png" alt="<?= $row['kogel']?>">
+                    </a>
                     <form class="voting" method="post" action="">
                         <input type="hidden" name="id" value="<?= $row['postID']?>">
                         <button type="submit" name="vote" class="vote-btn">Vote</button>
