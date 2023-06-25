@@ -50,7 +50,7 @@
                             <li>
                                 <span style="height:<?= $procentage ?>%" title="<?= $row['kaas'] ?>"></span>
                             </li>
-                       <?php }    ?>
+                       <?php } ?>
                   <!-- <li>
                     <span style="height:5%" title="project 1"></span>
                   </li>
